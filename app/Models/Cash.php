@@ -10,6 +10,7 @@ class Cash extends Model
     use HasFactory;
 
     protected $fillable = ["name", "slug", "when", "amount", "description"];
+    protected $dates = ["when"];
 
     public function user()
     {
